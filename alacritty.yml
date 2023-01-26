@@ -1,22 +1,46 @@
+selection:
+  save_to_clipboard: true
+  text: CellBackground
+
 window:
-  padding:
-    x: 5
-    y: 0
-  dynamic_padding: false
-  decorations: buttonless
-  startup_mode: Windowed
   opacity: 0.95
-
-  title: Lets write some code!!!
+  dimensions:
+    columns: 110
+    lines: 52
+  padding:
+    x: 4
+    y: 0
+  startup_mode: Windowed
   dynamic_title: true
+  decorations: buttonless
+  # decorations: none
 
-  scrolling:
-    history: 10000
-    multiplier: 3
+scrolling:
+  history: 10000
+  multiplier: 3
+
+mouse:
+  hide_when_typing: true
 
 font:
   normal:
     family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  itlaic:
+    family: Hack Nerd Font
+    style: Italic
+  size: 12
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+draw_bold_text_with_bright_colors: false
 
 colors:
   name: TokyoNight Night
@@ -52,7 +76,15 @@ colors:
     - { index: 16, color: "0xff9e64" }
     - { index: 17, color: "0xdb4b4b" }
 
-working_directory: /Users/viktoraslipinskis/dev
+# TokyoNight Alacritty Colors
+
+cursor:
+  style:
+    shape: Block
+  vi_mode_style:
+    shape: Beam
+
+# working_directory: /Users/viktoraslipinskis/dev
 
 debug:
   render_timer: false
