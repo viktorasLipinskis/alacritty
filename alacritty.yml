@@ -4,8 +4,15 @@ window:
     y: 0
   dynamic_padding: false
   decorations: buttonless
-  startup_mode: Fullscreen
-  # background_opacity: 0.7
+  startup_mode: Windowed
+  opacity: 0.95
+
+  title: Lets write some code!!!
+  dynamic_title: true
+
+  scrolling:
+    history: 10000
+    multiplier: 3
 
 font:
   normal:
@@ -45,6 +52,10 @@ colors:
     - { index: 16, color: "0xff9e64" }
     - { index: 17, color: "0xdb4b4b" }
 
-  # keybindings
-actions:
-  - { key: N, mods: Command, action: SpawnNewInstance }
+working_directory: /Users/viktoraslipinskis/dev
+
+debug:
+  render_timer: false
+
+key_bindings:
+  - { key: Space, mods: Shift, action: ToggleViMode }
